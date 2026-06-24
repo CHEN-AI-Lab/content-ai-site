@@ -1,0 +1,21 @@
+{
+  "name": "@content-ai/shared",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "echo 'shared lint ok'"
+  },
+  "dependencies": {
+    "zod": "^3"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "vitest": "^3",
+    "react": "^19",
+    "@types/react": "^19"
+  }
+}

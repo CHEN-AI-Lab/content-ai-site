@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "paths": {
+      "@content-ai/shared": ["./shared"],
+      "@content-ai/ui": ["./packages/ui/src"]
+    }
+  },
+  "include": ["shared/**/*.ts", "shared/**/*.tsx", "packages/ui/**/*.ts", "packages/ui/**/*.tsx"]
+}
