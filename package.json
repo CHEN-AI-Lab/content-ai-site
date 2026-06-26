@@ -11,6 +11,8 @@
     "lint": "turbo lint",
     "test": "turbo test",
     "test:unit": "pnpm --filter shared test",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
     "typecheck": "turbo typecheck",
     "clean": "turbo clean"
   },
