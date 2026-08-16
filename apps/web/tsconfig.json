@@ -6,7 +6,11 @@
     "module": "ESNext",
     "moduleResolution": "bundler",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@content-ai/shared": ["../../shared/index.ts"],
+      "@content-ai/shared/*": ["../../shared/*"],
+      "@content-ai/ui": ["../../packages/ui/index.ts"],
+      "@content-ai/ui/*": ["../../packages/ui/*"]
     },
     "plugins": [{ "name": "next" }]
   },
