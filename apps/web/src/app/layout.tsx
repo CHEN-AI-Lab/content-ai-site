@@ -2,7 +2,8 @@ import type { Metadata } from 'next'
 import { BRAND } from '@content-ai/shared'
 import { getLocale, getMessages } from '@/lib/i18n-server'
 import LanguageSwitcher from './language-switcher'
-import './globals.css'
+import "./globals.css"
+import VisitTracker from "@/components/VisitTracker"
 
 export const metadata: Metadata = {
   title: `${BRAND.name} - AI Content Generator`,
@@ -67,6 +68,7 @@ export default async function RootLayout({
             <p className="text-xs opacity-40 mt-4">© 2026 {BRAND.name}. All rights reserved.</p>
           </div>
         </footer>
+      <VisitTracker />
       </body>
     </html>
   )

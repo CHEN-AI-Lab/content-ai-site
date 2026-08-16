@@ -67,8 +67,8 @@ export const BRAND = {
 
 export const WORKER_URL =
   (typeof process !== 'undefined' &&
-    (process as any).env?.NEXT_PUBLIC_WORKER_URL) ||
-  'https://stats.aaigc.workers.dev'
+    (process as any).env?.NEXT_PUBLIC_WORKER_URL) || ''
+// Must be set via NEXT_PUBLIC_WORKER_URL env var — no hardcoded default.
 
 // Fallback tracking endpoint for users who cannot reach the Worker (e.g. China)
 // Sends tracking data directly to the stats-dashboard API.

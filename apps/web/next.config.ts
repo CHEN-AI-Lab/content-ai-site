@@ -5,6 +5,9 @@ import type { NextConfig } from "next"
 // misidentifies the project directory. The harmless workspace
 // root warning is acceptable.
 
-const nextConfig: NextConfig = {}
-
+const nextConfig: NextConfig = {
+  env: {
+    NEXT_PUBLIC_VERCEL_ENV: process.env.VERCEL_ENV || 'development',
+  },
+};
 export default nextConfig
